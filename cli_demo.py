@@ -9,7 +9,7 @@ from transformers.generation.utils import GenerationConfig
 def init_model():
     print("init model ...")
     model = AutoModelForCausalLM.from_pretrained(
-        "Flmc/DISC-MedLLM",
+        "HealGPT",
         torch_dtype=torch.float16,
         device_map="auto",
         trust_remote_code=True,
@@ -58,7 +58,7 @@ def main(stream=True):
         if prompt.strip() == "clear":
             messages = clear_screen()
             continue
-        print(Fore.CYAN + Style.BRIGHT + "\nDISC-MedLLM：" + Style.NORMAL, end='')
+        print(Fore.CYAN + Style.BRIGHT + "\nHealGPT：" + Style.NORMAL, end='')
         if prompt.strip() == "stream":
             stream = not stream
             print(Fore.YELLOW + "({}流式生成)\n".format("开启" if stream else "关闭"), end='')
