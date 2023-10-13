@@ -11,7 +11,7 @@
 HealGPT 是一个专门针对医疗健康对话式场景而设计的医疗领域大模型，由GR-Tech 开发并开源。
 
 
-您可以通过访问这个[链接](http://healgpt.guangrong-tech.com)来试用我们的模型。
+您可以通过访问这个[链接](http://heal-gpt.cn)来试用我们的模型。
 
 ## 概述
 
